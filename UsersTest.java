@@ -11,7 +11,7 @@ public class UsersTest {
 		user1.setEmail(null);
 		user1.setFullname("gaurav arya");
 		user1.setPassword("helloworld");
-      EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
+      EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("OnlineBookApp");
        EntityManager entityManager = entityManagerFactory.createEntityManager();
        entityManager.getTransaction().begin();
        entityManager.persist(user1);
